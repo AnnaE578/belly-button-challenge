@@ -82,10 +82,8 @@ function optionChanged (samplevalue) {
 
   buildCharts(samplevalue);
   buildMetadata(samplevalue);
-  buildBubbleChart(value);
+  buildBubbleChart(samplevalue);
 };
- 
-init();
 
 function buildBubbleChart(sample) {
   d3.json(bellybutton).then((data) => {
